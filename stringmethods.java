@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class stringmethods{
+	public static void main (String args[]){
+		Scanner scan=new Scanner(System.in);
+		System.out.print("please enter the first string = ");
+		String s1=scan.nextLine();
+		System.out.print("please enter the second string = ");
+		String s2=scan.nextLine();
+		System.out.println("converting both the string to uppercase = "+s1.toUpperCase()+" "+s2.toUpperCase());
+		System.out.println("converting both the string to lowercase = "+s1.toLowerCase()+" "+s2.toLowerCase());
+		System.out.println("lenght of string 1 = "+s1.length()+" lenght of string 2 = "+s2.length());
+		System.out.print("please enter a char which is present in string 1 =");
+		String c1=scan.nextLine();
+		System.out.print("please enter a char which is present in string 2 =");
+		String c2=scan.nextLine();
+		System.out.println("replacing "+ c1 +" from string 1 to z = "+s1.replace(c1,"z"));
+		System.out.println("replacing "+ c2 +" from string 2 to z = "+s2.replace(c2,"z"));
+		System.out.println("the character at position 2 in string 1 = "+s1.charAt(2));
+		System.out.println("the character at position 3 in string 2 = "+s2.charAt(3));
+		System.out.println("concantinate both string = "+s1.concat(s2));
+		}
+	}

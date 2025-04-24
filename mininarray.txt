@@ -1,0 +1,12 @@
+java class mininarray{
+	public static void main (String args[]){
+		int arr [] = int [] {23,65,34,89,234,65,21,34,89,76,545}
+		int temp = arr[0];
+		for(int i=1;i<len(arr);i++){
+			if(temp>arr[i]){
+				temp=arr[i];
+				}
+			}
+		System.out.println("the smallest number in arr is = ",temp);
+		}
+	}

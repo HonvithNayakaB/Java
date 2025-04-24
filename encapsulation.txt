@@ -1,0 +1,47 @@
+import java.util.Scanner;
+class encapsulation{
+	int a;
+	int b;
+	void add(int a,int b){
+		int c=a+b;
+		System.out.println(a+" + "+b+" = "+c);
+		}
+	void sub(int a,int b){
+		int c=a-b;
+		System.out.println(a+" - "+b+" = "+c);
+		}
+	void mul(int a,int b){
+		int c=a*b;
+		System.out.println(a+" * "+b+" = "+c);
+		}
+	void div(int a,int b){
+		int c=a/b;
+		System.out.println(a+" / "+b+" = "+c);
+		}	
+	public static void main (String args[]){
+		Scanner scan=new Scanner(System.in);
+		System.out.print("please enter the first number = ");
+		a=scan.nextInt();
+		System.out.print("please enter the second number = ");
+		b=scan.nextInt();
+		System.out.print("please enter the arthmetic operation symbol = ");
+		Strtin sy=scan.nextInt();
+		switch(sy){
+			case "+":
+				add(a,b);
+				break;
+			case "-":
+				sub(a,b);
+				break;
+			case "*":
+				mul(a,b);
+				break;
+			case "/":
+				div(a,b);
+				break;
+			default:
+				System.out.println("please enter a valid input");
+				break;
+				}
+			}
+		} 

@@ -1,0 +1,25 @@
+interface sound{
+	void sound();
+	}
+interface movement{
+	void movement();
+	}
+class animal implements sound,movement{
+	public void sound(){
+		System.out.println("the animal is making some sound ");
+		}
+	public void movement(){
+		System.out.println("the animal is moving ");
+		}
+	public void name(){
+		System.out.println("the animal is a goat ");
+		}
+	}
+class multipalinheritance{
+	public static void main(String args []){
+		animal obj=new animal();
+			obj.name();
+			obj.movement();
+			obj.sound();
+			}
+		}

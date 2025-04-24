@@ -1,0 +1,16 @@
+class test1{
+	void run(){
+		System.out.println("the vehical is running safely ");
+	}
+}
+class test2 entends test1{
+	void run (){
+		System.out.println("the vehical is running correctly ");
+	}
+}
+class ovrriding {
+	public static void main (String args[]){
+		test2 obj=new test2();
+		obj.run();
+		}
+	}
